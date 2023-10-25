@@ -3506,7 +3506,7 @@ input, select, textarea {
 				}
 				
 				#banner .content h4 {
-    text-align: left; /* Align the text to the left */
+    text-align: right; /* Align the text to the left */
     width: 1000px; /* Set the width to your desired value */
 }
 
