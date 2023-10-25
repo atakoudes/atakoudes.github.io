@@ -3452,7 +3452,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/bbh.jpg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3471,10 +3471,10 @@ input, select, textarea {
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3504,6 +3504,11 @@ input, select, textarea {
 					font-size: 2.5em;
 					margin: 0;
 				}
+				
+				#banner .content h4 {
+    text-align: left; /* Align the text to the left */
+    width: 1000px; /* Set the width to your desired value */
+}
 
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
