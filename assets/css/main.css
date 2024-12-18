@@ -1966,13 +1966,15 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		button:hover,
-		.button:hover {
-			background-color: #B6BD94;
-		}
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    button:hover,
+    .button:hover {
+    	background-color: transparent;
+    	color: #B6BD94 !important;
+    	box-shadow: inset 0 0 0 1px #B6BD94;
+    }
 
 		input[type="button"]:active,
 		input[type="submit"]:active,
@@ -2265,7 +2267,7 @@ input, select, textarea {
 			}
 
 			#main > section.three {
-				background-color: #f5fafa;
+				background-color: #EBF0F0;
 			}
 
 			#main > section.four {
@@ -2449,7 +2451,7 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #222729 url("images/overlay.png");
+				background: #596C59 url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -2649,3 +2651,62 @@ input, select, textarea {
     display: block; /* Ensures it centers correctly */
     border: 2px solid #ffffff; /* Optional: Add a border around the image */
 }
+
+/* Inherit global styles from your existing code */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between; /* Spread content across the row */
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Set background color to white */
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 0%;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensure vertical alignment */
+    align-items: flex-start; /* Align text to the left */
+    flex-grow: 1; /* Allow it to take remaining space */
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #596C59;
+    margin: 0;
+}
+
+.role {
+    font-size: 1rem;
+    color: #596C59;
+    margin: 0;
+}
+
+.experience-years {
+    font-size: 1rem;
+    color: #596C59;
+    font-weight: bold;
+    text-align: right; /* Align text to the right */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+
